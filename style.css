@@ -28,6 +28,10 @@ body{
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+.name{
+ color: hsl(212, 21%, 14%);
+}
+
 
 img{
   width: 100%;
@@ -35,8 +39,9 @@ img{
 
 .price{
   color: hsl(158, 36%, 37%);
-  font-size: 40px;
-  font-family: Fraunces;
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 button{
@@ -68,7 +73,10 @@ button:hover {
 
  h5{
   color: hsl(228, 12%, 48%);
-  font-size: 10px;
+  font-size: 13px;
+  text-decoration: line-through;
+  position: relative;
+  bottom: 10px;
 }
 
 .column-text{
@@ -92,4 +100,12 @@ p{
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 600px){
+
+   .row{
+    flex-direction: column;
+  }
+
 }
